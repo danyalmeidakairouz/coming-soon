@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Photons - Coming Soon</title>
+    <style>
+        /* CSS Reset and Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html {
+            height: 100%;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #111111;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px; 
+            padding: 40px 20px;
+            width: 100%;
+        }
+
+        /* Logo Styling */
+        .logo {
+            max-width: 300px;
+            width: 80%;
+            height: auto;
+            margin-bottom: 80px; 
+            /* Inverts the black logo to white for the dark background */
+            filter: invert(1);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 4rem; 
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #cccccc;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto; 
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem; 
+            }
+            .logo {
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Make sure Artboard 1.png is in the same directory as this HTML file -->
+        <img src="Artboard 1.png" alt="Simply Photons Logo" class="logo">
+        
+        <h1>Let there be light!</h1>
+        <p>Oh, shoot! I left the lens cap on again. Give us a second to fix the exposure.</p>
+    </div>
+
+</body>
+</html>
