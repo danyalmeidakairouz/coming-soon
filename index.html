@@ -16,8 +16,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-      <link rel="icon" href="/favicon.ico">
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,6 +28,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    
+    <!-- FontAwesome Library for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <title>Simply Photons - Coming Soon</title>
     <style>
         /* CSS Reset and Global Styles */
@@ -81,6 +85,43 @@
             margin: 0 auto; 
         }
 
+        /* Footer / Links Section */
+        .bottom-links {
+            display: flex;
+            justify-content: center;
+            gap: 60px; /* Space between the two sections */
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #333333;
+        }
+
+        .link-section h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888888;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        .icon-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .icon-group a {
+            color: #cccccc;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .icon-group a:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
         /* Responsive Design for Mobile */
         @media (max-width: 600px) {
             h1 {
@@ -89,17 +130,42 @@
             .logo {
                 margin-bottom: 50px;
             }
+            .bottom-links {
+                flex-direction: column;
+                gap: 40px;
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Make sure Artboard 1.png is in the same directory as this HTML file -->
         <img src="Artboard 1.png" alt="Simply Photons Logo" class="logo">
         
         <h1>Let there be light!</h1>
-        <p>Oh, shoot! I left the lens cap on again. Give us a second to fix the exposure.</p>
+        <p>Oh, shoot! I left the lens cap on again.<br>Give us a second to fix the exposure.</p>
+
+        <div class="bottom-links">
+            
+            <div class="link-section">
+                <h3>Contact Us</h3>
+                <div class="icon-group">
+                    <a href="tel:+14384535734" aria-label="Call Us"><i class="fa-solid fa-phone"></i></a>
+                    
+                    <a href="mailto:dany.almeidakairouz@simplyphotons.ca" aria-label="Email Us"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="link-section">
+                <h3>Follow Us</h3>
+                <div class="icon-group">
+                    <a href="https://www.instagram.com/simplyphotons" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    
+                    <a href="https://www.youtube.com/@SimplyPhotons" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
